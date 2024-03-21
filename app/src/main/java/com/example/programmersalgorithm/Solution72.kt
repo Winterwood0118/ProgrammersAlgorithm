@@ -43,7 +43,7 @@ class Solution72 {
     }
 }
 
-class Solution {
+class Solution72_1 {
     fun solution(players: Array<String>, callings: Array<String>): Array<String> {
         // 플레이어와 위치를 매핑하는 맵 생성
         val playerMap = mutableMapOf<String, Int>()
