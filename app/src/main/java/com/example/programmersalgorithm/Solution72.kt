@@ -1,19 +1,7 @@
 package com.example.programmersalgorithm
 
 
-/*class Solution72 {
-    fun solution(players: Array<String>, callings: Array<String>): Array<String> {
-        val answer = players.map { it }.toMutableList()
 
-        for( i in callings ){
-            val rank = answer.indexOf(i)
-            answer[rank] = answer[rank-1]
-            answer[rank-1] = i
-        }
-
-        return answer.toTypedArray()
-    }
-}*/
 fun main() {
     val test = mutableMapOf<String, Int>()
 

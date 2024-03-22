@@ -1,5 +1,7 @@
 package com.example.programmersalgorithm
 
+import kotlinx.coroutines.delay
+
 fun main() {
     val idListTest = arrayOf("muzi", "frodo", "apeach", "neo")
     val reportTest = arrayOf("muzi frodo","apeach frodo","frodo neo","muzi neo","apeach muzi")
@@ -7,20 +9,6 @@ fun main() {
 
     val test = Solution74()
     test.solution(idListTest,  reportTest, kTest)
-
-/*    val testMap = mutableMapOf<String, MutableMap<String, Int>>()
-    val testInnerMap = mutableMapOf<String, Int>()
-    val stringArray = arrayOf("a", "b", "c", "d")
-    for (i in stringArray ){
-        testInnerMap[i] = 0
-    }
-    for (i in stringArray){
-        val ttMap = testInnerMap
-        testMap[i] = ttMap
-    }
-    testMap["a"]!!["b"] = 1
-
-    println(testMap) // {a={a=0, b=1, c=0, d=0}, b={a=0, b=1, c=0, d=0}, c={a=0, b=1, c=0, d=0}, d={a=0, b=1, c=0, d=0}}*/
 
 }
 
