@@ -1,4 +1,4 @@
-package com.example.programmersalgorithm
+package com.example.programmersalgorithm.camp
 // 각도기
 class Solution8 {
     fun solution(angle: Int): Int = when(angle){

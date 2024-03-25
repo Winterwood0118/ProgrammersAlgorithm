@@ -1,4 +1,4 @@
-package com.example.programmersalgorithm
+package com.example.programmersalgorithm.camp
 
 // 나머지가 1이 되는 수 찾기
 class Solution15 {

@@ -1,4 +1,4 @@
-package com.example.programmersalgorithm
+package com.example.programmersalgorithm.camp
 
 // 배열의 평균값
 class Solution10 {

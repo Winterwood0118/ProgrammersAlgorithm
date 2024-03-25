@@ -1,4 +1,4 @@
-package com.example.programmersalgorithm
+package com.example.programmersalgorithm.camp
 
 fun main() {
     val park = arrayOf("OOO", "OSO", "OOO", "OOO")

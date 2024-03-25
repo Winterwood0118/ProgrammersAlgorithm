@@ -1,6 +1,4 @@
-package com.example.programmersalgorithm
-
-import kotlinx.coroutines.delay
+package com.example.programmersalgorithm.camp
 
 fun main() {
     val idListTest = arrayOf("muzi", "frodo", "apeach", "neo")

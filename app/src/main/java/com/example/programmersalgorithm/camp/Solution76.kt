@@ -1,4 +1,4 @@
-package com.example.programmersalgorithm
+package com.example.programmersalgorithm.camp
 
 class Solution76 {
     fun solution(s: String): String = s.split(" ").map {

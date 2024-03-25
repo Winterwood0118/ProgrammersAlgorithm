@@ -1,4 +1,4 @@
-package com.example.programmersalgorithm
+package com.example.programmersalgorithm.camp
 
 import kotlin.concurrent.thread
 import kotlin.time.measureTime
