@@ -1,9 +1,8 @@
 package com.example.programmersalgorithm.notcamp.lv0
-// a와 b 출력하기
-class No2 {
+//덧셈 식 출력하기
+class No6 {
     fun main(args: Array<String>) {
         val (a, b) = readLine()!!.split(' ').map(String::toInt)
-        println("a = $a")
-        println("b = $b")
+        println("$a + $b = ${ a + b }")
     }
 }
