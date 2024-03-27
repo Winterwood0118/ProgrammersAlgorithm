@@ -1,6 +1,5 @@
 package com.example.programmersalgorithm.camp
 
-import kotlin.math.sqrt
 
 // 카펫
 
@@ -23,7 +22,7 @@ class Solution79 {
 
     fun solution2(brown: Int, yellow: Int): IntArray {
         val area = brown + yellow
-        return (1..Math.sqrt(area.toDouble()).toInt())
+        return (1..area)
             .first { area % it == 0 && 2 * (area / it + it - 2) == brown }
             .let { intArrayOf(area / it, it) }
     }
