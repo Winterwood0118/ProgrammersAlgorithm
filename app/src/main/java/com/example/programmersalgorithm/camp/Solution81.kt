@@ -30,6 +30,5 @@ class Solution81 {
             if(x==0) return answer
             answer++
         }
-        return answer
     }
 }
