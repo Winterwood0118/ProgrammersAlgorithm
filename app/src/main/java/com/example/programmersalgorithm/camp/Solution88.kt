@@ -1,5 +1,7 @@
 package com.example.programmersalgorithm.camp
 
+import java.text.DecimalFormat
+
 // 배열의 곱셈
 fun main() {
     val sol = Solution88()
@@ -13,7 +15,7 @@ fun main() {
         intArrayOf(3, 3)
     )
 
-    println(Solution88().solution(test, test2).toList())
+    val decimal = DecimalFormat("#,###")
 }
 
 class Solution88 {

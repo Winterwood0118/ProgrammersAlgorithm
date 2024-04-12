@@ -26,6 +26,18 @@ class Solution89 {
         return answer
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
     fun solution2(want: Array<String>, number: IntArray, discount: Array<String>): Int {
         var answer: Int = 0
         val wantMap = mutableMapOf<String, Int>()
