@@ -6,8 +6,10 @@ class Solution90 {
         var answer = 1
         val clothesGroup = clothes.groupBy { it[1] }
 
+        // <상의, (빨간 티, 파란 티, x)>, <하의, (청바지, 슬랙스, x)>
+
         for (i in clothesGroup) {
-            answer *= i.value.size
+            answer *= i.value.size + 1
         }
         answer -= 1
         return answer
