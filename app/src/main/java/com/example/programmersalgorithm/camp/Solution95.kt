@@ -1,7 +1,7 @@
 package com.example.programmersalgorithm.camp
 
-import kotlin.math.sqrt
-
+import java.math.BigInteger
+import kotlin.math.*
 fun main() {
     val test = 437674
     val k = 3
@@ -28,5 +28,14 @@ class Solution95 {
         .count { long1 ->
             (2..sqrt(long1.toDouble()).toLong()).count { long1 % it == 0L } == 0
         }
+    fun solution2(n: Int, k: Int): Int {
+        var answer: Int =0
+        val newN = n.toString(k).split("0")
+        for(i in newN) {
+            if(i == "" || i == "0" || i == "1") continue
+            if(BigInteger(i).isProbablePrime(1)) answer ++
+        }
+        return answer
+    }
 }
 
