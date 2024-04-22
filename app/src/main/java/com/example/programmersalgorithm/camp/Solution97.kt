@@ -5,6 +5,7 @@ import kotlin.math.pow
 // 모음 사전
 fun main() {
     println(Solution97().solution("AAAAE"))
+    //asd
 }
 
 class Solution97 {
