@@ -5,22 +5,22 @@ import kotlin.time.Duration.Companion.seconds
 
 //뒤에 있는 큰 수 찾기
 fun main() {
-    val testArray = intArrayOf(2, 3, 3, 5)
+    val testArray = intArrayOf(2, 3, 3, 5) // [3, 5, 5, -1] 최대 1000000
 
     println(Solution98().solution(testArray).toList())
 }
 
 class Solution98 {
-    /*
-    fun solution(numbers: IntArray): IntArray {
-            val answer: IntArray = IntArray(numbers.size) { 0 }
-            for (i in numbers.indices){
-                val number = numbers.slice(i..numbers.lastIndex).firstOrNull{ it > numbers[i] }?: -1
-                answer[i] = number
-            }
-            return answer
+
+/*    fun solution(numbers: IntArray): IntArray {
+        val answer: IntArray = IntArray(numbers.size) { 0 }
+        for (i in numbers.indices) {
+            val number = numbers.slice(i..numbers.lastIndex).firstOrNull { it > numbers[i] } ?: -1
+            answer[i] = number
         }
-        */
+        return answer
+    }*/
+
     fun solution(numbers: IntArray): IntArray {
         val answer: IntArray = IntArray(numbers.size) { -1 }
         val numbersWithIndex = numbers.mapIndexed { i, c -> i to c }.toTypedArray()

@@ -5,7 +5,7 @@ import java.util.Stack
 fun main() {
     val fees = intArrayOf(180, 5000, 10, 600)
     val records = arrayOf(
-        "05:34 5961 IN",
+        "05:34 5961 IN", // -> listOf( "05:34", "5961" , "IN")
         "06:00 0000 IN",
         "06:34 0000 OUT",
         "07:59 5961 OUT",
@@ -15,7 +15,15 @@ fun main() {
         "22:59 5961 IN",
         "23:00 5961 OUT"
     )
-    val test = Solution96().solution(fees, records)
+
+    val test = IntArray(6){ it } // -> (0, 1, ~~ ,5)
+    test.map { it.toString() }.mapIndexed { index, s ->
+        if (s == "4") s.toInt()
+        else s.toInt() + index
+    }
+
+
+
 }
 
 class Solution96 {
